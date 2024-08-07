@@ -1,0 +1,374 @@
+/* :root {
+    --color1: 8860D0;
+    --color2: 5680E9;
+    --color3: c
+} */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-width: 320px;
+}
+
+header, main, footer {
+    /* padding: 50px 0; */
+    /* margin: 40px; */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+header {
+    padding: 20px 15px ;
+}
+
+.header {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(..//images/header-image-2-option.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: 1;
+}
+
+.header .h1,
+.header .btn {
+    color: white;
+}
+
+/*logo and nav*/
+
+.change-color {
+    background-color: #84ceeb;
+    padding: 15px 20px;
+}
+
+.change-color .nav-link {
+    color: white;
+}
+
+.navbar-custom {
+    font-family: "Nunito", sans-serif;
+}
+
+/*-------------------------------------*/
+
+.h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 2.25rem;
+    z-index: 2;
+    position: relative;
+    padding: 60px 10px 20px ;
+}
+
+.btn-itd {
+    background: linear-gradient(to right, #8860d0 0%,#84ceeb 91%);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    z-index: 3;
+    position: relative;
+    border-bottom: 5px solid white;
+    width: 25vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    transition: all 0.2s ease;
+}
+
+.btn-itd:hover {
+    background-color: white;
+}
+
+.card-card {
+    background-color: #5680E9;
+}
+
+.btn-custom {
+    border-radius: 50px;
+    width: 40vw;
+    color: #8860D0;
+    background-color: white;
+    border-color: #8860D0;
+}
+
+.btn-custom:hover {
+    background-color: #8860D0;
+    color: white;
+    border-color: white;
+}
+
+.h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 1.875rem;
+    padding: 25px 25px 0 25px;
+}
+
+.h3 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.125rem;
+}
+
+.h4 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.info {
+    margin: 0 50px;
+    padding: 20px;
+}
+
+.meet-clients {
+    background-color: #8860d0;
+    width: 100%;
+    height: 20vh;
+    margin: 15px 0;
+    padding-bottom: 10px;
+}
+
+.client {
+    font-family: "Pt sans";
+    background-color: #5680E9;
+    padding: 30px 15px;
+    border-radius: 7px;
+}
+
+.clients-custom {
+    margin: 20px 40px;
+}
+
+.footer{
+    background-color: #8860D0;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+
+
+/*=====================================================================*/
+/*About page*/
+
+.our-custom {
+    background-color: #8860D0;
+    padding: 20px;    
+}
+
+.story-custom{
+    background-color: #5680E9;
+    margin: 30px;
+    padding: 15px;
+}
+
+.img-custom {
+    border-radius: 15px;
+    padding: 0px 30px;
+}
+
+.text-team {
+    background-color: #5680E9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.carousel-custom {
+    background-color: #C1C8E4;
+    margin: 10px 35px;
+}
+
+.services-custom{
+    color: #5680E9;
+    border: 4px solid #8860D0;
+    padding: 120px 0px;
+}
+
+.service {
+    margin: 30px;
+}
+
+/*contact us*/
+
+.icons-custom {
+    margin: 20px 0;
+}
+
+.custom-contact {
+    padding: 0;
+}
+
+.text-above{
+    margin: 0;
+    color: #5680E9;
+    font-style: italic;
+}
+    
+
+.icon {
+    margin-right: 10px;
+}
+
+.input-custom {
+    border-color: #5680E9;
+}
+
+.section {
+    margin: 20px;
+}
+
+.button {
+    background: linear-gradient(to right, #8860d0 0%,#84ceeb 91%);
+    color: white;
+    font-weight: 600;
+    z-index: 3;
+    position: relative;
+    border-bottom: 5px solid white;
+    width: 30vw;
+    height: 7vh;
+    margin: 10px auto;
+}
+
+.image-div {
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #C1C8E4;
+}
+
+.image-custom{
+    border-radius: 20px;
+    width: 20vw;
+    padding: 20px;
+}
+
+/*media about page slide*/
+
+@media (min-width: 768px) {
+    .carousel-custom {
+        display: none; /* Hide carousel on tablets and larger */
+    }
+}
+@media (max-width: 767.98px) {
+    .column-container {
+        display: none; /* Hide columns on mobile */
+    }
+
+    .image-custom {
+        width: 20px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .h1 {
+        font-size: 3rem ;
+    }
+
+    .h2 {
+        font-size: 2rem;
+    }
+
+    .h3 {
+        font-size: 1.5rem;
+    }
+
+    .h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .btn-itd {
+        width: 15vw;
+        font-size: 1rem;
+        
+    }
+
+    .btn {
+        width: 15vw;
+    }
+   
+}
+@media (min-width: 992px) {
+    .h1 {
+        font-size: 4rem;
+    }
+   
+    .h2 {
+        font-size: 3rem;
+    }
+
+    .h3 {
+        font-size: 2rem;
+    }
+
+    .h4 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn-itd {
+        width: 15vw;
+        height: 8vh;
+        font-size: 1.8rem ;
+    }
+
+    .btn {
+        width: 15vw;
+    }
+
+}
